@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Followed https://www.youtube.com/watch?v=O3m-OMfYgW8&t
+
+Just with my own twist. Learned a lot about CSS from his tutorial, and I think I will put it to good use in future projects.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Adrian Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Script source in body instead? -->
+     <script src="./scripts.js"></script>
+    <!-- Like wut? -->
+    <link rel="shortcut icon" href="./imgs/iconbrowser.webp" type="image/x-icon">
+    <!-- An old picture of me that already had a transparent background. Sue me!-->
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-main">
+            <div class="logo">L</div>
+            <div class="logo-text">Portfolio Website</div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Skills</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="contactButton">Contact me</a>
+                </li>
+            </ul>
+            <a href="#" class="hamburger-menu" onClick="menuDropDownMobile();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBoz="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <h1><small>Hi I am</small>
+                    Odd Adrian Prestegård</h1>
+                    <p>Participant in Kodehode, Haugesund. Learning front end and this site is pure html/css/js and by gods, CSS is the bane of my existence. Looking forward to learn front end frameworks like Vue and Nuxt. Also past experience with Backend solutions like Python flask and django, and PHP. Super excited to try out C# and Java in the near future. Graduated master's programme in Digital Culture at the University of Bergen. <span>I am very interested in Gaming and building relationships with people. And Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis libero reiciendis rem dicta earum!</span></p>
+                    <div class="call-to-action">
+                        <a href="./Odd Adrian M.pdf" class="button black">View Resume</a>
+                        <a href="mailto:oddprestegard@gmail.com" class="button white">Contact Me (Email)</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <img src="./imgs/github.png" alt="Github" width="48">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48">
+                        </a>
+                    </div>
+            </div>
+            <div class="hero-yellow">
+                <img src="./imgs/oddrian.png" alt="Odd Adrian" width="100%">
+            </div>
+        </section>
+        <!-- <section class="logos container">
+
+        </section> -->
+    </main>
+
+</body>
+</html>
