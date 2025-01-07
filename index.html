@@ -2,7 +2,7 @@
 <!--
 Followed https://www.youtube.com/watch?v=O3m-OMfYgW8&t
 
-Just with my own twist. Learned a lot about CSS from his tutorial, and I think I will put it to good use in future projects.
+Just with my own twist. Learned a lot about CSS from his tutorial (Nested css etcetera, can change it to normal css if needed be but it works), and I think I will put it to good use in future projects if permitted.
 -->
 
 <html lang="en">
@@ -27,7 +27,7 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#menu">Home</a>
                 </li>
                 <li>
                     <a href="#">Skills</a>
@@ -117,10 +117,10 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
                 <label for="lastName">Last name: </label>
                 <input type="text" id="lastName" name="lastName" placeholder="Nordmann" required>
                 <label for="email">E-mail: </label>
-                <input type="text" id="email" name="email" placeholder="olanordmann@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="olanordmann@gmail.com" required>
                 <label for="message">Write your message here: </label>
                 <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
-                <button type="submit" class="button" onClick="return validateForm();">Send</button>
+                <button type="submit" class="button" onClick="validateForm();">Send</button>
             </form>
         </section>
     </main>

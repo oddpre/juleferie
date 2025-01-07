@@ -1,6 +1,7 @@
-/* Followed Adrian Twarog's portfolio guide (see: https://www.youtube.com/watch?v=O3m-OMfYgW8&t) for the most part, had no idea CSS could be nested this way. It seems more fun that way, and less haassle.
+/* 
+Followed Adrian Twarog's portfolio guide (see: https://www.youtube.com/watch?v=O3m-OMfYgW8&t) for the most part, had no idea CSS could be nested this way. It seems more fun that way, and less haassle.
 Apparantly, this is SCSS. I don't know if I should be using it, but this is easier for me to comprehend over than usual CSS.
-
+It works for now, but I will convert this to normal CSS-syntax.
 */
 
 *, *::before, *::after
@@ -355,6 +356,11 @@ header
 .submitTheForm
 {
     margin-top:50px;
+    text-align: center; 
+    width: 100%; 
+    max-width: 1440px; 
+    margin-left: auto; 
+    margin-right: auto; 
     .thatFormShow
     {
         display:flex;
@@ -369,7 +375,7 @@ header
             font-size:16px;
             margin-bottom: 5px;
         }
-        input[type="text"], textarea
+        input[type="text"], input[type="email"], textarea
         {
             padding:10px;
             border: 1px solid var(--base-400);
@@ -400,7 +406,5 @@ header
                 transform: translateY(-5px);
             }
         }
-
     }
 }
-
