@@ -9,11 +9,11 @@ Just with my own twist. Learned a lot about CSS from his tutorial (Nested css et
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odd Adrian Portfolio</title>
+    <title>Odd Prestegård Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styled.css">
     <link rel="shortcut icon" href="./imgs/iconbrowser.webp" type="image/x-icon">
     <!-- An old picture of me that already had a transparent background. Sue me!-->
 
@@ -21,7 +21,7 @@ Just with my own twist. Learned a lot about CSS from his tutorial (Nested css et
 <body>
     <header>
         <a href="#" class="logo-main">
-            <div class="logo">OP</div>
+            <div class="logo">OP</div> <!-- My initials, but also known as Overpowered, which I am!! /s -->
             <div class="logo-text">Portfolio</div>
         </a>
         <nav>
@@ -51,7 +51,7 @@ Just with my own twist. Learned a lot about CSS from his tutorial (Nested css et
             <div class="hero-blue">
                 <h1><small>Hi I am</small>
                     Odd Adrian Prestegård</h1>
-                    <p>Participant in Kodehode, Haugesund. Learning front end and this site is based on HTML, CSS and a few lines of JS. Having nested CSS makes it look more fun and easier to me to maintain at least. Looking forward to learn front end frameworks like Vue and Nuxt. Also past experience with Backend solutions like Python flask and django, and PHP. Super excited to try out C# and Java in the near future. Graduated master's programme in Digital Culture at the University of Bergen. <span>I am very interested in Gaming and building relationships with people. And Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis libero reiciendis rem dicta earum!</span></p>
+                    <p>Participant in Kodehode, Haugesund. Learning front end and this site is based on HTML, CSS and a few lines of JS. Having nested CSS makes it look more fun and easier to me to maintain at least. Looking forward to learn front end frameworks like Vue and am currently looking a bit at React. Also past experience with Backend solutions like Python flask and django, and PHP. Super excited to try out C# and Java in the near future. Graduated master's programme in Digital Culture at the University of Bergen. <span>I am very interested in Gaming and building relationships with people. And Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis libero reiciendis rem dicta earum!</span></p>
                     <div class="call-to-action">
                         <a href="./OddAdrianM.pdf" class="button black">View Resume</a>
                         <a href="mailto:oddprestegard@gmail.com" class="button white">Contact Me (Email)</a>
@@ -80,27 +80,27 @@ Just with my own twist. Learned a lot about CSS from his tutorial (Nested css et
                     </a>
                 </div>
                 <div class="project-item">
-                    <a href="#">
-                    <img src="./imgs/html.png" alt="Project 2" width="48">
-                    <h3>Craftsvilla</h3>
-                    <p>Group Project - Responsible for gallery and some of the texts.</p>
+                    <a href="https://sakh11.github.io/craftvilla-page/">
+                        <img src="./imgs/html.png" alt="Project 2" width="48">
+                        <h3>Craftsvilla</h3>
+                        <p>Group Project - Responsible for gallery and some of the texts.</p>
                     </a>
                 </div>
                 <div class="project-item">
-                    <a href="#">
-                    <img src="./imgs/javascript.png" alt="Project 3" width="48">
-                    <h3>JavaScript</h3>
-                    <p>Snippet of some of the JS-files I have made</p>
-                </a>
+                    <a href="imgs/insaneness.png" target="_blank"> <!-- Impressive amirite? -->
+                        <img src="./imgs/javascript.png" alt="Project 3" width="48">
+                        <h3>JavaScript</h3>
+                        <p>A super advanced JS-file I made! It outputs "Hello World!" in the console! What is this kinda sorcery?! <em><br>Opens a new window</em></p>
+                    </a>
                 </div>
                 <div class="project-item">
-                    <a href="#">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/3/32/Python_molurus_molurus_2.jpg"> <!--For legal reasons, this is a joke. I just haven't made any github-worthy python projects yet.-->
                         <img src="./imgs/python.png" alt="Project 4" width="48">
                         <h3>Python</h3>
                         <p>Some of the Python projects I have made</p>
                     </a>
                 </div>
-                <div class="project-item">
+                <div class="project-item"> <!-- Here, I sort of wanted to make a greyed out "upcoming" project to release, as I have been slowly working on a React Project that I am still very slowly learning. -->
                     <a href="#">
                         <img src="./imgs/react.png" alt="Upcoming Project" width="48">
                         <h3>React</h3>
@@ -109,6 +109,9 @@ Just with my own twist. Learned a lot about CSS from his tutorial (Nested css et
                 </div>
             </div>
         </section>
+        <!--
+        Would be nice to add in skills section here, but it's not a part of the task.
+        -->
         <section class="submitTheForm" id="contactMe">
             <form class="thatFormShow">
                 <h2>Contact me</h2>
