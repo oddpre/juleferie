@@ -1,4 +1,7 @@
-/* Followed Adrian Twarog's portfolio guide (see: https://www.youtube.com/watch?v=O3m-OMfYgW8&t) for the most part, had no idea CSS could be nested this way. It seems more fun that way, and less haassle, and it looks more refined  */
+/* Followed Adrian Twarog's portfolio guide (see: https://www.youtube.com/watch?v=O3m-OMfYgW8&t) for the most part, had no idea CSS could be nested this way. It seems more fun that way, and less haassle.
+Apparantly, this is SCSS. I don't know if I should be using it, but this is easier for me to comprehend over than usual CSS.
+
+*/
 
 *, *::before, *::after
 {
@@ -35,7 +38,7 @@ body
     font-size:20px;
 }
 
-
+/*  */
 h1
 {
     font-size:64px;
@@ -84,7 +87,7 @@ header
         font-weight:600;
         color: var(--base-800);
         
-        .logo
+        .logo /* OP Logo, stands for Odd Prestegård */
         {
             display:flex;
             align-items: center;
@@ -303,3 +306,101 @@ header
         }
     }
 }
+
+.projects
+{
+    margin-top: 50px;
+    .project-items
+    {
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+        .project-item
+        {
+            background-color:var(--base-100);
+            border-radius:10px;
+            padding:20px;
+            flex:1 1 calc(33.333% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            &:hover
+            {
+                transform: translateY(-10px);
+            }
+            img
+            {
+                display:block;
+                margin:0 auto 10px;
+            }
+            h3 
+            {
+                font-size:24px;
+                margin-bottom:10px;
+                text-align:center;
+            }
+            p
+            {
+                font-size:16px;
+                margin-bottom:10px;
+                text-align:center;
+            }
+            a
+            {
+                color:var(--base-800);
+            }
+        }
+    }
+}
+
+.submitTheForm
+{
+    margin-top:50px;
+    .thatFormShow
+    {
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        background-color:var(--base-100);
+        padding:20px;
+        border-radius:10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        label
+        {
+            font-size:16px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea
+        {
+            padding:10px;
+            border: 1px solid var(--base-400);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea
+        {
+            resize:vertical;
+            min-height:100px;
+        }
+        .button
+        {
+            display:inline-block;
+            padding: 10px 20px;
+            font: 16px;
+            font-weight:bold;
+            text-align:center;
+            text-decoration:none;
+            border-radius:5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor:pointer;
+            background-color:var(--base-800);
+            color:var(--base-100);
+            &:hover
+            {
+                background-color:var(--base-400);
+                transform: translateY(-5px);
+            }
+        }
+
+    }
+}
+

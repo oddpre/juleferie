@@ -14,10 +14,6 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-
-    <!-- Script source in body instead? -->
-     <script src="./scripts.js"></script>
-    <!-- Like wut? -->
     <link rel="shortcut icon" href="./imgs/iconbrowser.webp" type="image/x-icon">
     <!-- An old picture of me that already had a transparent background. Sue me!-->
 
@@ -26,7 +22,7 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
     <header>
         <a href="#" class="logo-main">
             <div class="logo">OP</div>
-            <div class="logo-text">Portfolio Website</div>
+            <div class="logo-text">Portfolio</div>
         </a>
         <nav>
             <ul id="menu">
@@ -37,14 +33,14 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
                     <a href="#">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="contactButton">Contact me</a>
+                    <a href="#contactMe">Contact me</a>
                 </li>
             </ul>
             <a href="#" class="hamburger-menu" onClick="menuDropDownMobile();">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBoz="0 0 24 24">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
                 </svg>
             </a>
@@ -55,9 +51,9 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
             <div class="hero-blue">
                 <h1><small>Hi I am</small>
                     Odd Adrian Prestegård</h1>
-                    <p>Participant in Kodehode, Haugesund. Learning front end and this site is pure html/css/js and by gods, CSS is the bane of my existence. Looking forward to learn front end frameworks like Vue and Nuxt. Also past experience with Backend solutions like Python flask and django, and PHP. Super excited to try out C# and Java in the near future. Graduated master's programme in Digital Culture at the University of Bergen. <span>I am very interested in Gaming and building relationships with people. And Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis libero reiciendis rem dicta earum!</span></p>
+                    <p>Participant in Kodehode, Haugesund. Learning front end and this site is based on HTML, CSS and a few lines of JS. Having nested CSS makes it look more fun and easier to me to maintain at least. Looking forward to learn front end frameworks like Vue and Nuxt. Also past experience with Backend solutions like Python flask and django, and PHP. Super excited to try out C# and Java in the near future. Graduated master's programme in Digital Culture at the University of Bergen. <span>I am very interested in Gaming and building relationships with people. And Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis libero reiciendis rem dicta earum!</span></p>
                     <div class="call-to-action">
-                        <a href="./Odd Adrian M.pdf" class="button black">View Resume</a>
+                        <a href="./OddAdrianM.pdf" class="button black">View Resume</a>
                         <a href="mailto:oddprestegard@gmail.com" class="button white">Contact Me (Email)</a>
                     </div>
                     <div class="social-links">
@@ -70,20 +66,64 @@ Just with my own twist. Learned a lot about CSS from his tutorial, and I think I
                     </div>
             </div>
             <div class="hero-yellow">
-                <img src="./imgs/oddrian.png" alt="Odd Adrian" width="100%">
+                <img src="./imgs/oddrian.png" alt="Odd Adrian">
             </div>
         </section>
-        <!-- <section class="logos container">
-
-        </section> -->
-
-
-        <section class="formContactMe">
-            <div class="forms">
-
+        <section class="projects container" id="projects">
+            <h2>Projects</h2>
+            <div class="project-items">
+                <div class="project-item">
+                    <a href="https://github.com/oddpre/parallax/tree/main/Assignment%202">
+                        <img src="./imgs/css.png" alt="Project 1" width="48">
+                        <h3>Parallax Website </h3>
+                        <p>A project where I praise Bergen in its Winter/Xmas period. Got that juicy parallax effect in it.</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="#">
+                    <img src="./imgs/html.png" alt="Project 2" width="48">
+                    <h3>Craftsvilla</h3>
+                    <p>Group Project - Responsible for gallery and some of the texts.</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="#">
+                    <img src="./imgs/javascript.png" alt="Project 3" width="48">
+                    <h3>JavaScript</h3>
+                    <p>Snippet of some of the JS-files I have made</p>
+                </a>
+                </div>
+                <div class="project-item">
+                    <a href="#">
+                        <img src="./imgs/python.png" alt="Project 4" width="48">
+                        <h3>Python</h3>
+                        <p>Some of the Python projects I have made</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="#">
+                        <img src="./imgs/react.png" alt="Upcoming Project" width="48">
+                        <h3>React</h3>
+                        <p>Upcoming React Project - an extension of Phasmophobia Website from Task 1. (Placeholder, not an actual project at the moment)</p>
+                    </a>
+                </div>
             </div>
+        </section>
+        <section class="submitTheForm" id="contactMe">
+            <form class="thatFormShow">
+                <h2>Contact me</h2>
+                <label for="firstName">First name: </label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ola" required>
+                <label for="lastName">Last name: </label>
+                <input type="text" id="lastName" name="lastName" placeholder="Nordmann" required>
+                <label for="email">E-mail: </label>
+                <input type="text" id="email" name="email" placeholder="olanordmann@gmail.com" required>
+                <label for="message">Write your message here: </label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                <button type="submit" class="button" onClick="return validateForm();">Send</button>
+            </form>
         </section>
     </main>
-
+    <script src="./scripts.js"></script>
 </body>
 </html>
