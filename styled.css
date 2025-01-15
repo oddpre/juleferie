@@ -237,6 +237,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 1.75;
 }
 
 .hero-blue span {
@@ -350,6 +351,8 @@ nav ul li a:hover {
 .thatFormShow input[type="text"],
 .thatFormShow input[type="email"],
 .thatFormShow textarea {
+    width:50%;
+    margin: 0 auto;
     padding: 10px;
     border: 1px solid var(--base-400);
     border-radius: 5px;
@@ -362,6 +365,8 @@ nav ul li a:hover {
 }
 
 .thatFormShow .button {
+    width:50%;
+    margin:0 auto;
     display: inline-block;
     padding: 10px 20px;
     font: 16px;
